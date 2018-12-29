@@ -2,7 +2,7 @@
 
 ## This application is a login - sign up app using the MERN stack.
 
-###### Here is a little more detailed stack for this project
+###### brief description of packages and functions used on this project:
 
 `bcryptjs: `
 ** used to hash password before stored in database **
