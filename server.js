@@ -14,7 +14,7 @@ app.use(
 app.use(bodyParser.json());
 
 // DB config
-const db = require("config/keys").mongoURI;
+const db = require("./config/keys").mongoURI;
 
 // connect to MongoDB
 mongoose
@@ -27,4 +27,4 @@ mongoose
 const port = process.env.PORT || 5000;
 // process.env.PORT is the setup for future deployment with Heroku
 
-app.listen(port, () => console.log(`The server is running on port ${port}`));
+app.listen(port, () => console.log(`Server is running on port ${port}`));
