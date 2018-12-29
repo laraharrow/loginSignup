@@ -26,7 +26,10 @@
 ** We are using mLab to support our database **
 
 `passport: `
-** Used to authenticate requests **
+** Used to authenticate requests using a list pf plugins called `strategy`**
+
+`passport-jwt: `
+** `passport strategy' for authentication with JSON WEB TOKEN (jwt) lets you authenticate endpoints using jwt **
 
 `validator: `
 ** Used to validate inputs - like email format and password match **

@@ -1,23 +1,24 @@
 const Validator = require("validator");
 const isEmpty = require("is-empty");
 
-module.exports = function validateLoginInput(data) {
+module.exports = function validateRegisterInput(data) {
+  let errors = {};
 
-  // convert empty fields in empty strings, validator function only accepts strings
-  data.email = isEmpty(data.email) ? "" : data.email;
-  data.password = isEmpty(data.password) ? "" : data.password;
+  // Convert empty fields to an empty string so we can use validator functions
+  data.email = !isEmpty(data.email) ? data.email : "";
+  data.password = !isEmpty(data.password) ? data.password : "";
 
-  // validating email
-  if(Validator.isEmpty(data.email)) {
-    error.email = "Email is required";
+  // Email checks
+  if (Validator.isEmpty(data.email)) {
+    errors.email = "Email field is required";
   } else if (!Validator.isEmail(data.email)) {
-    error.email = "Invalid email format";
+    errors.email = "Email is invalid";
+  }
+  // Password checks
+  if (Validator.isEmpty(data.password)) {
+    errors.password = "Password field is required";
   }
 
-  // validating password
-  if (Validator.isEmpty(data.password)) {
-    error.password = "Password field is required";
-  }
   return {
     errors,
     isValid: isEmpty(errors)
