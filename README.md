@@ -1,4 +1,4 @@
-# Login Signup
+# Login Signup backend
 
 ## This application is a login - sign up app using the MERN stack.
 
