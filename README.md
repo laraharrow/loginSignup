@@ -1,8 +1,13 @@
 # Login Signup -- FULL-STACK
 
 ## This application is a login - signup FORM app using the MERN stack.
+> NOTE1:
+To run this code (front and back end) on your terminal run the command:
+```
+npm run dev
 
-> NOTE:
+```
+> NOTE2:
 This project doesn't require `Redux`. But I decided to use it to express the capabilities of a more functional application using the MERN stack. Once in the industry a  large-scale project following the MERN stack can take advantage of the use of `Redux`.
 
 ---------------------------------------------
